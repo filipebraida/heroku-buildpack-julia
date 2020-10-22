@@ -47,6 +47,10 @@ set-env LIBRARY_PATH '$HOME/.apt/usr/lib/x86_64-linux-gnu:$HOME/julia/lib:$HOME/
 set-env LD_LIBRARY_PATH '$HOME/.apt/usr/lib/x86_64-linux-gnu:$HOME/julia/lib:$HOME/julia/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH'
 set-env JULIA_LOAD_PATH '@:$HOME:'
 
+# Get PyCall to Build
+export PYCALL_DEBUG_BUILD="yes"
+export PYTHON=".julia/conda/3/bin/python3"
+
 export LIBRARY_PATH=./.apt/usr/lib/x86_64-linux-gnu:./julia/lib:./julia/lib/x86_64-linux-gnu:$LIBRARY_PATH
 export LD_LIBRARY_PATH=./.apt/usr/lib/x86_64-linux-gnu:./julia/lib:./julia/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
 export PATH=./.apt/usr/bin:./julia/bin:$PATH
